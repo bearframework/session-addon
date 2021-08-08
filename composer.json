@@ -1,0 +1,31 @@
+{
+    "name": "bearframework/session-addon",
+    "description": "Session addon for Bear Framework",
+    "keywords": [
+        "session",
+        "addon",
+        "Bear Framework"
+    ],
+    "homepage": "https://github.com/bearframework/session-addon",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivo Petkov",
+            "email": "ivo@ivopetkov.com",
+            "homepage": "http://ivopetkov.com"
+        }
+    ],
+    "require": {
+        "php": "7.1.*|7.2.*|7.3.*|7.4.*|8.0.*",
+        "bearframework/bearframework": "1.*",
+        "ivopetkov/locks-bearframework-addon": "1.*"
+    },
+    "require-dev": {
+        "bearframework/addon-tests": "1.*"
+    },
+    "autoload": {
+        "files": [
+            "autoload.php"
+        ]
+    }
+}
