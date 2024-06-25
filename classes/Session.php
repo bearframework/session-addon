@@ -100,6 +100,16 @@ class Session
     /**
      * 
      * @param string $key
+     * @return bool
+     */
+    public function exists(string $key): bool
+    {
+        return $this->get($key) !== null;
+    }
+
+    /**
+     * 
+     * @param string $key
      * @return void
      */
     public function delete(string $key): void
