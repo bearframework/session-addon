@@ -23,7 +23,7 @@ $app->shortcuts
     });
 
 $app
-    ->addEventListener('beforeSendResponse', function (App\BeforeSendResponseEventDetails $details) use ($app, $cookieName) {
+    ->addEventListener('beforeSendResponse', function (App\BeforeSendResponseEventDetails $details) use ($app, $cookieName): void {
         $response = $details->response;
         $cookieSessionID = $app->request->cookies->getValue($cookieName);
         $currentSessionID = $app->session->id;

@@ -27,7 +27,7 @@ class Session
      * 
      * @param string $id
      */
-    public function __construct(string $id = null)
+    public function __construct(?string $id = null)
     {
         $this->id = $id;
     }
